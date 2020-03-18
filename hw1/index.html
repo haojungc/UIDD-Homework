@@ -12,15 +12,15 @@
   <body>
     <div id="navbar" class="row">
       <!-- Narita Airport logo -->
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div id="nrt-logo-wrapper">
-          <img src="./images/nrt_logo_01.svg" alt="NRT logo" />
-          <img src="./images/nrt_logo_02.svg" alt="NRT logo" />
+          <img class="mr-3" src="./images/nrt_logo_01.svg" alt="NRT logo">
+          <img src="./images/nrt_logo_02.svg" alt="NRT logo">
         </div>
       </div>
 
       <!-- navbar buttons -->
-      <div class="col-sm-4 btns">
+      <div class="col-sm-6 btns">
         <!-- how it works -->
         <a class="btn active" href="#" role="button">How it works</a>
 
@@ -33,31 +33,60 @@
       </div>
 
       <!-- search bar -->
-      <div class="col-sm-4">
+      <div class="col-sm-3">
+        <div id="search-bar">
+          <input type="text" class="form-control" placeholder="ex:Exchange">
+          <button id="search-button" type="button"><img src="./images/search_icon.svg" alt="search button"></button>
+        </div>
+        
       </div>
     </div>
 
     <div id="main" class="row">
       <!-- ground transportation -->
       <div class="col-sm-4">
-        <img id="left-orange" src="./images/left_orange.svg" alt="to ground transportation" />
+        <img id="left-orange" src="./images/left_orange.svg" alt="to ground transportation">
       </div>
 
       <!-- middle picture -->
       <div class="col-sm-4">
         <div id="middle-area">
-          <img src="./images/slogan.svg" alt="middle picture" />
-          <img src="./images/middle_picture.svg" alt="middle picture" />
+          <img class="top" src="./images/slogan.svg" alt="middle picture">
+          <img class="bottom" src="./images/middle_picture.svg" alt="middle picture">
         </div>
       </div>
       
       <!-- departure/arrival -->
-      <div class="col-sm-4">
-        <img id="right-blue" src="./images/right_blue.svg" alt="to departure or arrival" />
+      <div class="col-sm-4 text-right">
+        <img id="right-blue" src="./images/right_blue.svg" alt="to departure or arrival">
       </div>
     </div>
 
-    <div id="bottom">
+    <div id="bottom" class="row">
+      <!-- follow us -->
+      <div class="col-sm-3">
+        <div id="follow-us">
+          <div class="text">Follow Us</div>
+          <div class="btns">
+            <a href="#"><img src="./images/facebook_icon.svg" alt="facebook"></a>
+            <a href="#"><img src="./images/twitter_icon.svg" alt="twitter"></a>
+            <a href="#"><img src="./images/youtube_icon.svg" alt="youtube"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- scrollbar -->
+      <div class="col-sm-6">
+        <div id="scrollbar">
+          <img class="background" src="./images/bottom_scollbar.svg" alt="scrollbar">
+          <img id="question-mark" src="./images/bottom_question_mark.svg" alt="question mark">
+        </div>
+      </div>
+
+      <!-- language selection -->
+      <div class="col-sm-3 text-right" id="language">
+        <button class="btn text">Language</button>
+      </div>
     </div>
 
     <!-- BS4 -->

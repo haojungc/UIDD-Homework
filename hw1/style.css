@@ -1,3 +1,9 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* Navbar */
 #navbar {
   align-items: center;
@@ -6,6 +12,11 @@
 
 #navbar #nrt-logo-wrapper {
   margin-left: 20%;
+  height: 3vh;
+}
+
+#navbar #nrt-logo-wrapper img {
+  height: 100%;
 }
 
 #navbar .btns {
@@ -15,7 +26,39 @@
 }
 
 #navbar .btns .btn {
-  width: 30%;
+  width: 8em;
+  font-size: 1.3rem;
+  color: #254767;
+}
+
+#navbar .btns .btn.active {
+  font-weight: bold;
+}
+
+#navbar #search-bar {
+  position: relative;
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  margin-right: 20%;
+}
+
+#navbar #search-bar input {
+  border-color: #254767;
+  border-radius: 999px;
+}
+
+#navbar #search-bar #search-button {
+  position: absolute;
+  right: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  height: 100%;
+}
+
+#navbar #search-bar #search-button img {
+  height: 100%;
 }
 
 /* Main */
@@ -25,13 +68,38 @@
 }
 
 #main #middle-area {
+  position: relative;
   text-align: center;
   max-width: 100%;
+}
+
+#main #middle-area .top {
+  position: fixed;
+  top: 18vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 10vh;
+}
+
+#main #middle-area .bottom {
+  position: fixed;
+  bottom: 15vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 55vh;
 }
 
 #main #left-orange,
 #main #right-blue {
   height: 70vh;
+}
+
+#main #left-orange {
+  margin-left: -20vw;
+}
+
+#main #right-blue {
+  margin-right: -20vw;
 }
 
 /* Bottom */
@@ -40,3 +108,47 @@
   height: 15vh;
 }
 
+#bottom #follow-us {
+  display: flex;
+  margin-left: 20%;
+}
+
+#bottom #follow-us .text {
+  color: #AAAAAA;
+  font-weight: bold;
+}
+
+#bottom #follow-us .btns {
+  margin-left: 1em;
+}
+
+#bottom #follow-us .btns a {
+  margin: 0 0.8em;
+}
+
+#bottom #scrollbar {
+  position: relative;
+  display: flex;
+  text-align: center;
+  width: 25%;
+  margin: 0 auto;
+}
+
+#bottom #scrollbar .background {
+  width: 100%;
+}
+
+#bottom #scrollbar #question-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  z-index: 10;
+}
+
+#bottom #language .text {
+  margin-right: 20%;
+  color: #AAAAAA;
+  font-weight: bold;
+}
