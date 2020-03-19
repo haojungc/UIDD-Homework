@@ -159,6 +159,7 @@ body {
 /* About us */
 #intro-carousel-wrapper {
   margin: auto 5%;
+  max-height: 100%;
 }
 
 #intro-carousel .carousel-indicators {
@@ -167,12 +168,15 @@ body {
 }
 
 #intro-carousel .intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   width: 70%;
   margin-left: 10%;
   margin-right: auto;
 }
 
 #intro-carousel .title {
+  min-width: 100%;
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -183,14 +187,18 @@ body {
 }
 
 #intro-carousel .text {
+  min-width: 100%;
   font-size: 1.2rem;
   color: #AAAAAA;
+  line-height: 1.2;
   margin-bottom: 10%;
 }
 
 #intro-carousel .btns {
+  min-width: 100%;
   display: flex;
   justify-content: space-between;
+  align-self: flex-end;
 }
 
 #intro-carousel #learn-more,
@@ -199,14 +207,16 @@ body {
   font-weight: bold;
   color: white;
   letter-spacing: 0.1em;
-  padding: 0.8em 2em;
+  padding: 0.8em 1em;
   border-radius: 999px;
 }
 
 #intro-carousel #learn-more {
+  max-width: 40%;
   background-color: #e56c4f;
 }
 
 #intro-carousel #sign-up {
+  max-width: 60%;
   background-color: #417fb8;
 }
