@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Hw1</title>
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id="navbar" class="row">
+      <!-- Narita Airport logo -->
+      <div class="col-sm-3">
+        <div id="nrt-logo-wrapper">
+          <img class="mr-3" src="./images/nrt_logo_01.svg" alt="NRT logo">
+          <img src="./images/nrt_logo_02.svg" alt="NRT logo">
+        </div>
+      </div>
+
+      <!-- navbar buttons -->
+      <div class="col-sm-6 btns">
+        <!-- how it works -->
+        <a class="btn" href="./index.html" role="button">How it works</a>
+
+        <!-- about us -->
+        <a class="btn active" href="#" role="button">About us</a>
+
+        <!-- contact -->
+        <a class="btn" href="#" role="button">Contact</a>
+        
+      </div>
+
+      <!-- search bar -->
+      <div class="col-sm-3">
+        <div id="search-bar">
+          <input type="text" class="form-control" placeholder="ex:Exchange">
+          <button id="search-button" type="button"><img src="./images/search_icon.svg" alt="search button"></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <!-- carousel -->
+      <div id="intro-carousel-wrapper">
+        <div id="intro-carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#intro-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#intro-carousel" data-slide-to="1"></li>
+            <li data-target="#intro-carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img class="d-block w-100" src="./images/about_us/carousel_01.png" alt="First slide">
+                </div>
+                <div class="col-sm-6">
+                  <div class="intro-wrapper">
+                    <div class="title">NARITA AIRPORT<br>TERMINAL 3</div>
+                    <p class="text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of type and
+                      scrambled it to make a type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting, remaining essentially
+                      unchanged. It was popularised in the 1960s with the release of Letraset
+                      sheets containing Lorem Ipsum passages, and more recently with desktop
+                      publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    
+                    <div class="btns">
+                      <!-- learn more -->
+                      <a id="learn-more" class="btn" href="#" role="button">Learn More</a>
+
+                      <!-- sign up with gmail -->
+                      <a id="sign-up" class="btn" href="#" role="button">Sign Up with G-mail</a>
+                    </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#intro-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#intro-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottom" class="row">
+      <!-- follow us -->
+      <div class="col-sm-3">
+        <div id="follow-us">
+          <div class="text">Follow Us</div>
+          <div class="btns">
+            <a href="#"><img src="./images/facebook_icon.svg" alt="facebook"></a>
+            <a href="#"><img src="./images/twitter_icon.svg" alt="twitter"></a>
+            <a href="#"><img src="./images/youtube_icon.svg" alt="youtube"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- language selection -->
+      <div class="offset-sm-6 col-sm-3 text-right" id="language">
+        <button class="btn text">Language</button>
+      </div>
+    </div>
+
+    <!-- BS4 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

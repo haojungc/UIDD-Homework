@@ -6,6 +6,7 @@ body {
 
 /* Navbar */
 #navbar {
+  display: flex;
   align-items: center;
   height: 15vh;
 }
@@ -63,6 +64,7 @@ body {
 
 /* Main */
 #main {
+  display: flex;
   align-items: center;
   height: 70vh;
 }
@@ -104,6 +106,7 @@ body {
 
 /* Bottom */
 #bottom {
+  display: flex;
   align-items: center;
   height: 15vh;
 }
@@ -151,4 +154,59 @@ body {
   margin-right: 20%;
   color: #AAAAAA;
   font-weight: bold;
+}
+
+/* About us */
+#intro-carousel-wrapper {
+  margin: auto 5%;
+}
+
+#intro-carousel .carousel-indicators {
+  opacity: 1;
+  margin-bottom: -50px;
+}
+
+#intro-carousel .intro-wrapper {
+  width: 70%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+#intro-carousel .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  color: #555555;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+#intro-carousel .text {
+  font-size: 1.2rem;
+  color: #AAAAAA;
+  margin-bottom: 10%;
+}
+
+#intro-carousel .btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+#intro-carousel #learn-more,
+#intro-carousel #sign-up {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.1em;
+  padding: 0.8em 2em;
+  border-radius: 999px;
+}
+
+#intro-carousel #learn-more {
+  background-color: #e56c4f;
+}
+
+#intro-carousel #sign-up {
+  background-color: #417fb8;
 }
